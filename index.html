@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCE - Noticias</title>
+    <link rel="icon" href="Imagenes/icono-candado.png">
+    <!--CUSTOM CSS.  aqui llamamos al codigo de css-->
+    <link rel="stylesheet" href="InicioEstilo.css">
+    <link rel="stylesheet" href="Responsive.css">
+    <!--Acciones js. Aqui llamamos al archivo javascript coneccion-->
+    <script src="Acciones.js"></script>
+    <!--Para obtener los iconos de otra pagina web-->
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="bannerInicio">
+        <img src="Imagenes/BannerAzul01.jpg" class="fade_up">
+        <h1 class="Titulo">Desarrollo de Sistemas</h1>
+        <div class="slider-frame">
+            <ul>
+                <li><img src="Imagenes/Slider01.jpg" class="fade_up" alt=""></li>
+                <li><img src="Imagenes/Slider02.jpg" class="fade_up" alt=""></li>
+                <li><img src="Imagenes/Slider03.jpg" class="fade_up" alt=""></li>
+                <li><img src="Imagenes/Slider04.jpg" class="fade_up" alt=""></li>
+            </ul>
+        </div>
+    </div>
+    <div class="Objetivo">
+        <img src="Imagenes/LogoUce.png" class="fade_down">
+        <h2 class="Bienvenida">  Bienvenido</h2>
+        <p class="Parrafo-Bienvenida">
+            Hola! Que tal, el objetivo de esta pagina es detallarte un poco sobre diversos acontecimientos que han sucitado en el pais,
+            como disturbios que se han generado por problemas sociales, politicos y economicos o noticas dispersas que marcan la historia, 
+            describiendo las caracteristicas que han tenido cada una de ellas, las consecuencias, detalles mas importantes, ademas de 
+            contar con cierta informacion que solo son supuestos pero que son interesntes poder saber, conocer y tener en cuenta. 
+        </p>
+    </div>
+    <div class="Lista">
+        <ul class="Temas">
+            <li><a href="#">Home</a></li>
+            <li><a href="#enlaceAbout">About</a></li>
+            <!--<li><a href="#enlaceBanner1">Problemas con la Internet</a></li>
+            <li><a href="#enlaceTips">Tips Internet Segura</a></li>-->
+            <li><a href="#enlaceReferencias">Referencias</a></li>
+        </ul>
+        <div class="Menu-Noticas">
+            <h1>Titulos de la Noticias</h1>
+            <select onchange="window.location.href=this.value">
+                <option value="">Bienvenido</option>
+                <option value="#RusiaUcrania">Rusia invade Ucrania</option>
+                <option value="#">Otra noticia internacional</option>
+                <option value="#yasuni">Explotación Yasuni</option>
+                <option value="#CocaCodo">hidroeléctrica Coca Codo</option>
+            </select>
+        </div>
+    </div>
+    <div class="banner2" id="enlaceAbout">
+        <div class="capa">
+            <div class="info">
+                <h1>Introduccion</h1>
+                <p>
+                    Tener noticias importantes en una página web es muy valioso por varias razones. 
+                    En primer lugar, las noticias son una forma de mantener a los visitantes informados 
+                    sobre los últimos acontecimientos y desarrollos en el mundo. Esto puede incluir noticias 
+                    sobre política, economía, deportes, entretenimiento, ciencia y tecnología, entre otros temas.
+                </p>
+                <a href="https://bibliotecadigital.udea.edu.co/">Leer Mas</a>
+            </div>
+        </div>   
+    </div>
+    <div class="Tema1-LinkMalo" id="enlaceBanner1"> <!--Coigo copiado del internet-->
+        <div class="titulo-banerNoticia">
+            <h1>Repositorio de Noticias Internacionales</h1>
+        </div>
+        <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C150.00,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
+    </div>
+    <main>
+        <section class="contenedor1">
+            <h2 class="titulo1">Rusia invade Ucrania</h2>
+            <div class="contenedor-texto1" id="RusiaUcrania">
+                <img src="Imagenes/RusiaUcrania.jpeg" alt="Probelma1" class="FotoLink">
+                <div class="contenido-textos">
+                    <h3><span>1</span>De qué se Trata?</h3>
+                    <p>
+                        Una operación militar rusa por tierra, aire y mar que comenzó después 
+                        de un discurso televisivo antes del amanecer en el que el presidente 
+                        Vladimir Putin exigió que el ejército de Ucrania depusiera las armas. 
+                    </p>
+                    <h3><span>2</span>Cuando sucedio el hecho?</h3>
+                    <p>
+                        Tras meses de tensiones crecientes, en los que Rusia concentró tropas a lo largo de las fronteras
+                         de Ucrania, este 24 de febrero, Putin dio luz verde a la invasión.
+                        El presidente Volodymir Zelensky afirmó que las fuerzas ucranianas se están defendiendo, 
+                        pero hay varios frentes abiertos en distintos puntos de país, incluso cerca de la capital Kiev.
+                        <a href="https://www.bbc.com/mundo/noticias-internacional-60514738#:~:text=24%20febrero%202022%20Si%20no%20puedes%20ver%20el,que%20el%20ej%C3%A9rcito%20de%20Ucrania%20depusiera%20las%20armas.">Referencia</a>
+                    </p>
+                    <h3><span>3</span>Supuestos</h3>
+                    <p>The Sun volvió a abordar el tema de la invasión rusa, pero señaló que Ucrania podría ser
+                        "solo el primer paso" en las acciones militares de Moscú, que posteriormente intentaría invadir 
+                        Lituania, Letonia y Estonia "al estilo de Hitler".
+                        Según el tabloide, Rusia ya había actuado "al estilo de Hitler" en Crimea y Georgia. 
+                        The Sun también citó las declaraciones de Alan West, almirante retirado de la Marina Real 
+                        británica, quien aseveró que cualquier guerra entre Rusia y los países bálticos podría provocar 
+                        una tercera guerra mundial.
+                        <a href="https://actualidad.rt.com/actualidad/420204-invasion-rusa-ucrania-fake-prensa-occidental">Referencia</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contenedor1">
+            <h2 class="titulo1">Riesgo país de Ecuador se dispara con las protestas</h2>
+            <div class="contenedor-texto1" id="nacional_andina">
+                <img src="Imagenes/petroamazonas.jpg" alt="Problema1" class="FotoLink">
+                <div class="contenido-textos">
+                    <h3><span>1</span>De qué se Trata?</h3>
+                    <p>
+                        
+                        <b>El riesgo país de Ecuador se disparó 110 puntos</b> y alcanzó un pico de 777 puntos entre el 7 y el 8 de octubre. 
+                        Esto equivale a un salto de 16,49%. Este indicador subió a medida que surgían noticias como la interrupción 
+                        de la producción campos petroleros clave en la Amazonía y ataques vandálicos contra empresas exportadoras en 
+                        la Sierra.
+                    </p>
+                    <h3><span>2</span>Riesgo País Ecuador</h3>
+                    <p>
+                        <br>
+                        El riesgo país es un indicador que mide las probabilidades de una nación de incumplir con el pago de su deuda 
+                        externa u otras obligaciones crediticias. 
+                        Mientras más alto es el indicador, es mayor la percepción de incumplimiento de pagos. Se mueve con el petróleo
+                    </p>
+                    <h3><span>3</span>Se mueve con el petróleo</h3>
+                    <p>
+                        En el caso de Ecuador el riesgo país está muy ligado a la producción de petróleo y a los precios del crudo en el 
+                        mercado internacional, porque el petróleo es una de las principales fuentes de ingresos del país. La noticia de 
+                        que la producción de la petrolera estatal Petroamazonas terminó en menos de 188.000 barriles diarios el 8 de octubre
+                        causó nerviosismo. Petroamazonas bombeó 437.518 barriles el 6 de octubre, o el equivalente al 80% de la producción
+                        de Ecuador, antes de que una serie de manifestantes comenzaran a invadir varios de sus campos clave. En su último 
+                        reporte el Ministerio de Energía detalló que los bloques 44 y 18, en la provincia de Orellana, habían suspendido 
+                        sus operaciones “debido a la presencia de personas ajenas a la operación”. A las 14:00 del 8 de octubre, según 
+                        el ministerio, unas 30 personas ingresaron a las instalaciones de Petroamazonas en el campo Pucuna y obligaron 
+                        al personal de la empresa a apagar 15 pozos. A las 15:40, unas 60 personas entraron al bloque 18, al campamento 
+                        de Palo Azul y forzaron al personal de Petroamazonas a apagar 30 pozos. Debido a ataques e invasiones el 7 de 
+                        octubre, se apagó también el campos Sacha, uno de los mayores del país, en el bloque 60.
+                    </p>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="contenedor1">
+        <h2 class="titulo1">Riesgo país sigue subiendo en medio del paro nacional indígena</h2>
+        <div class="contenedor-texto1" id="nacional_andina">
+            <img src="Imagenes/protesta-centro-historico.jpeg" alt="Problema1" class="FotoLink">
+            <div class="contenido-textos">
+                <h3><span>1</span>De qué se Trata?</h3>
+                <p>
+                    <b>
+                    El riesgo de Ecuador subió a 1.010 puntos al final de la cuarta jornada del paro nacional 
+                    liderado por la Confederación de Nacionalidades Indígenas (Conaie).
+                    </b>
+                </p>
+                <h3><span>2</span>Cuando sucedio el hecho?</h3>
+                <p>
+                    <em>Noticia actualizada el 17 de junio de 2022.</em>
+                    <br>
+                    El <b>riesgo</b> país de Ecuador se ubicó el 16 de junio en <b>1.010</b>
+                    puntos frente a los <b>944 puntos</b> registrados el <b>15 de junio,</b> en medio del <b>paro nacional</b> 
+                    convocado por la <b>Conaie.</b> 
+                    Antes del inicio paro, el riesgo país estaba fluctuando entre los 700 y 800 puntos. El indicador no había estado 
+                    tan alto desde el 11 de abril de 2021, cuando llegó a <b>1.169 puntos,</b> durante las elecciones presidenciales. 
+                    Este es un termómetro de la confianza de los bancos de inversión internacionales en la capacidad de un país de 
+                    pagar su deuda y de mantener la estabilidad necesaria para ello. Mientras más alto es el riesgo país (más puntos), 
+                    mayor es la probabilidad de que caiga en mora de su deuda pública.
+                </p>
+                <h3><span>3</span>Financiamiento elevado</h3>
+                <p>
+                    El riesgo país juega un papel importante en el cálculo de la tasa de interés que tendría que pagar Ecuador si 
+                    decidiera buscar financiamiento en el mercado internacional, a través de la emisión de bonos. Freddy García, 
+                    director de Estudios Económicos de Inteligencia Empresarial, explica que si Ecuador emitiera bonos en este momento, 
+                    tendría que pagar una tasa de interés del 12%. Aunque el ministerio de Finanzas, Simón Cueva, descartó que Ecuador 
+                    vaya a realizar una emisión de <a href="https://www.primicias.ec/noticias/economia/ecuador-emision-bonos-externos-economia-ecuador/">bonos de la deuda externa en 2022.</a>
+                    Sin embargo, la banca y las entidades financieras 
+                    privadas sí se ven afectadas por el riesgo país, porque acceden a financiamiento en el exterior y tendrían que pagar 
+                    tasas más altas a menos que el riesgo baje de nuevo. Si a la banca ecuatoriana le resulta más caro encontrar 
+                    financiamiento para traer recursos frescos, esto se traducirá en mayores tasas para quienes soliciten créditos 
+                    dentro del país.
+                </p>
+                <h3><span>3</span>Política e incoherencia</h3>
+                <p>
+                    Al llegar a los 944 puntos, el riesgo país tocó su punto más alto desde que comenzó el año y supera, incluso, 
+                    a los niveles registrados durante octubre de 2019, cuando Ecuador sufrió un violento paro. En la semana de 
+                    protestas que marcó a <a href="https://www.primicias.ec/noticias/economia/riesgo-pais-ecuador-dispara-protestas/">octubre de 2019</a>, 
+                    el riesgo país se mantuvo en un promedio de 800 puntos. Alejandro Arreaza, 
+                    economista para la región Andina de Barclays, considera que la crisis de inflación en el mundo también está 
+                    contribuyendo a elevar <a href="https://www.primicias.ec/primicias-tv/economia/riesgo-pais-ecuador-mercados-inversion-economia/">el riesgo país de Ecuador.</a>
+                    Arreaza reconoce que las protestas empujan el indicador al alza, 
+                    al causar incertidumbre en los mercados sobre el futuro político de Ecuador. Para Siobhan Morden, jefe de estrategia 
+                    de renta fija para la región del bróker de inversiones Amherst, el factor que más incide en la mala percepción de 
+                    riesgo de Ecuador, es la tensa relación entre los poderes <a href="https://www.primicias.ec/noticias/economia/muerte-cruzada-riesgo-mercados-financieros/">Ejecutivo y Legislativo </a>
+                    (la Asamblea Nacional). 
+                    Morden agrega que (desde afuera) es complicado entender las protestas, pues Ecuador tiene uno de los subsidios 
+                    más altos a los combustibles en América Latina. “La Conaie quiere más subsidios, pero a la vez demanda menos 
+                    extracción petrolera, eso es inconsistente. Cuesta entender la necesidad de protestas violentas”, explica.
+                </p>
+                <h3><span>3</span>Precio del petróleo</h3>
+                <p>
+                    El 16 de junio de 2022, el precio del barril de petróleo WTI, que sirve de referencia para Ecuador, se ubicó en 
+                    USD 113,25. La evolución del <a href="https://www.primicias.ec/noticias/economia/barril-wti-precios-goldman-sachs/">precio del petróleo</a>
+                    normalmente incide en el riesgo país de Ecuador, pues las 
+                    exportaciones petroleras son una de las principales fuentes de ingresos para el Estado. Si el precio del 
+                    petróleo cae o si se reduce la producción, existe mayor riesgo de que Ecuador no tenga ingresos suficientes para 
+                    pagar la deuda externa. Pese a que el precio del petróleo WTI durante 2022 ha sido bastante alto, con un promedio 
+                    de USD 100,96 por barril, el riesgo país de Ecuador sigue siendo elevado, resalta García.
+                </p>
+                <h3><span>3</span>¿Y después qué?</h3>
+                <p>
+                    Uno de los factores de inquietud, dice Augusto de la Torre, exdirector para América Latina del Banco Mundial, 
+                    es que los mercados se preguntan qué vendrá luego del período de mandato de Guillermo Lasso. Ecuador debe comenzar 
+                    los pagos de la mayor parte de su deuda en bonos a partir de 2025, cuando habrá un nuevo gobierno en el poder. 
+                    Pero con la inestabilidad social y política de Ecuador, es complicado vaticinar qué vendrá después. 
+                    “Eso no es atractivo para la inversión”, concluye De la Torre.
+                </p>
+            </div>
+        </div>
+    </section>
+
+        <section class="contenedor1">
+            <h2 class="titulo1">Desinformación</h2>
+            <div class="contenedor-texto1">
+                <img src="Imagenes/FotoDesinformacion.jpg" alt="Imagen de Desinformacion" class="FotoLink">
+                <div class="contenido-textos">
+                    <h3><span>1</span>De qué se Trata?</h3>
+                    <p>
+                        La desinformación​ es información falsa o engañosa​ que se difunde de manera intencionada para engañar e intentar manipular las creencias, emociones y opiniones del público en general. Este es un subconjunto de la información errónea y está relacionada estrechamente con la propaganda y las fake news. 
+                    </p>
+                    <h3><span>2</span>Cómo Protegerse?</h3>
+                    <p>
+                        Investiga la fuente. Cuando la leíste, ¿venía el nombre de la página donde se publicó originalmente, el autor, una marca de agua? Una vez que tienes algo de esto, lee más de su contenido: ¿suele compartir información confiable, o se concentra más en noticias amarillistas o que nadie ha comentado nunca?<br>
+                        Googlea el titular o una parte de su contenido. Así puedes saber si hay más medios hablando del tema. Quizá eso te ayude a encontrar una fuente más confiable o la voz de un experto sobre lo que acabas de enterarte.<br>
+                        Si la nota tiene una imagen, búscala. A veces la supuesta noticia se basa en una foto. Si es falsa, la imagen está sacada de contexto y, al buscarla en Google Images, te darás cuenta de qué se trata realmente.<br>
+                        
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="contenedor1">
+            <h2 class="titulo1">Software Desactualizado </h2>
+            <div class="contenedor-texto1">
+                <img src="Imagenes/FotoDesactualiza.jpg" alt="Imagen de Software Desactualizado" class="FotoLink">
+                <div class="contenido-textos">
+                    <h3><span>1</span>De qué se Trata?</h3>
+                    <p>
+                        Los actores maliciosos reconocen las vulnerabilidades más conocidas en sistemas operativos, utilizan el mismo enfoque para la navegación web. Muchos ordenadores portátiles tienen un software de búsqueda que los pone en riesgo, permitiendo a hackers acceder al historial del navegador, lo que puede a su vez poner en riesgo toda la información de inicio de sesión. 
+                    </p>
+                    <h3><span>2</span>Cómo Protegerse?</h3>
+                    <p>
+                        Todos estamos expuestos a este tipo de amenazas, por eso es de suma importancia estar al corriente con las actualizaciones de todo tipo de softwares en nuestro ordenador. Los desarrolladores parchean todas las posibles vulnerabilidades con actualizaciones y bloquean la entrada de los hackers.<br>
+                        Una vez que un fabricante ya no admite o vende cierto software o hardware, su riesgo de seguridad general aumentará día a día. Esto significa que debe acelerar su proceso de planificación. Sin embargo, actualizar sus soluciones le tomará tiempo, lo que significa que correrá un riesgo enorme hasta que se complete su iniciativa.<br>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="contenedor1">
+            <h2 class="titulo1">Cyberbullying</h2>
+            <div class="contenedor-texto1">
+                <img src="Imagenes/FotoBullying.png" alt="Imagen de Bullying" class="FotoLink">
+                <div class="contenido-textos">
+                    <h3><span>1</span>De que se Trata?</h3>
+                    <p>
+                        Ciberacoso es acoso o intimidación por medio de las tecnologías digitales. Puede ocurrir en las redes sociales, las plataformas de mensajería, las plataformas de juegos y los teléfonos móviles. Es un comportamiento que se repite y que busca atemorizar, enfadar o humillar a otras personas.  
+                    </p>
+                    <h3><span>2</span>Cómo Protegerse?</h3>
+                    <p>
+                        Es necesario un conocimiento por parte de alumnos, padres y profesores sobre estos casos de acoso y cómo deben actuar.<br>
+                        Los alumnos deben saber cómo responder afirmativamente ante un caso de ciberacoso. Los padres y profesores deben conocer los protocolos existentes en caso de que se produzca esta situación.<br>
+                        Implementar acciones que dificulten que a los menores lleguen personas con esas intenciones, que pasan por educar al menor en lo que tiene que ver con la gestión de la comunicación, de sus datos personales, imagen e intimidad; que sepa reaccionar (qué no hacer) y a quién acudir cuando hay una sospecha de que eso pudiera estar pasando.<br>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="contenedor1">
+            <h2 class="titulo1">Adicción de Redes Sociales</h2>
+            <div class="contenedor-texto1">
+                <img src="Imagenes/FotoAdiccion.jpg" alt="Imagen de Adiccion" class="FotoLink">
+                <div class="contenido-textos">
+                    <h3><span>1</span>De qué se Trata?</h3>
+                    <p>
+                        El uso problemático de las redes sociales, también conocido como adicción a las redes sociales o uso excesivo de las redes sociales o ciberadicción, es una forma de dependencia psicológica o conductual de las plataformas de las redes sociales, similar la ludopatía, el trastorno de adicción a Internet y otras formas de uso excesivo de los medios digitales.
+                    </p>
+                    <h3><span>2</span>Cómo Protegerse?</h3>
+                    <p>
+                        El tratamiento psicológico y socioterapéutico del trastorno de conducta por el abuso de las redes sociales, las nuevas tecnologías o de adicción a los móviles, se debe plantear según el contexto de la persona afectada. Teniendo en cuenta circunstancias tan distintas como la pluralidad del ser humano, además del entorno, su personalidad, los problemas que tenga y su forma de afrontarlos.<br>
+                        En función de la evolución de la persona y como afecte a su salud, pueden considerarse útiles los fármacos encaminados a disminuir estos episodios de intensidad y/o de impulsividad, los cambios de ánimo, etc.<br>
+                        El tratamiento de adicción a las redes sociales tiende a requerir de una intervención desde la vertiente psicológica, pero en ocasiones y según lo requiera el estado del paciente, es absolutamente necesario complementarlo con la psicofarmacológica.<br>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <div class="Tema2-Tips" id="enlaceTips"> <!--Coigo copiado del internet-->
+        <div>
+            <h1>Noticias Nacionales</h1>
+        </div>
+        <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C150.00,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
+    </div>
+    <section class="contenedor1">
+        <h2 class="tituloYasuni">Ecuador: las especies del Yasuní están en peligro por la explotación petrolera</h2>
+        <div class="contenedor-texto1" id="yasuni">
+            <img src="Imagenes/FotoYasuni.jpg" alt="Yasuni" class="FotoLink">
+            <div class="contenido-textos">
+            <div class="contenido-textos-yasuni">
+                <h3><span>1</span>De qué se Trata?</h3>
+                <p class="PrimerParrafoYasuni">
+                    El Parque Nacional Yasuní es una reserva del Ecuador con un área de aproximadamente 10.000 kilómetros 
+                    cuadrados. Está ubicado en las provincias orientales de Pastaza y Orellana, a unos 250 kilómetros al 
+                    sudeste de Quito en la cuenca del Amazonas. El parque fue reconocido como reserva de la biosfera por 
+                    la UNESCO en 1989. De acuerdo a estudios científicos, según recoge la WCS, el Parque Nacional Yasuní 
+                    es considerado uno de los lugares más biodiversos del mundo, porque en él conviven una gran cantidad 
+                    y variedad de organismos vivos.
+                    <br>
+                    La región amazónica ecuatoriana es rica en recursos petroleros y ha sido la columna vertebral de las 
+                    finanzas públicas del Ecuador desde la década de 1970. Para evitar la explotación indiscriminada de 
+                    los recursos naturales, el gobierno de Jamil Mahuad declaró la zona sur de Yasuní como Zona Intangible 
+                    en 1998, para proteger a las personas en aislamiento voluntario y a las reservas de biosfera del impacto 
+                    ambiental provocado por los campos petrolíferos.
+                    <br>
+                    Los Yasunidos se refieren al Decreto Ejecutivo 95 que pretende duplicar la explotación petrolera en el país. 
+                    El colectivo considera que la política del gobierno de Lasso profundizará “el extractivismo, garantizando 
+                    exorbitantes réditos e impunidad a las empresas petroleras”. Además, aseguran que “esta política va dirigida 
+                    contra los pueblos y nacionalidades indígenas que se verán afectadas por la ampliación de la frontera petrolera 
+                    en el sur oriente de la Amazonía y en el Yasuní”.
+                    <br>
+                    El sector hidrocarburífero ecuatoriano cuenta con un nuevo reglamento acorde a la política de Lasso 
+                    firmada en el decreto ejecutivo 95, el ministro de Energía y Recursos Naturales No Renovables, Juan 
+                    Carlos Bermeo Calderón, ha informado que “con esta normativa se actualizan procedimientos, cuya 
+                    aplicación contribuye al incremento de la producción petrolera, además se reducen los tiempos y 
+                    se simplifican procesos para trámites administrativos”.
+                    <br>
+                    Ecuador forma parte de la red de biosferas con 7 sitios reconocidos por la UNESCO: el Archipiélago de 
+                    Galápagos reconocido en 1984, el Parque Yasuní en 1989, el Parque Sumaco en 2000, el Parque Podocarpus-El 
+                    Cóndor en 2007, el Parque Cajas en 2013, la Reserva Transfronteriza Bosques de Paz en 2017, y la Reserva del 
+                    Chocó Andino en 2018.
+                </p>
+                <h3><span>2</span>Tensión en el Yasuní pone en riesgo a  pueblos en aislamiento</h3>
+                <p class="SegundoParrafoYasuni">
+                    Pichilingue relata una larga historia de conflictos y muertes entre indígenas de la etnia waorani, 
+                    colonos y pueblos aislados, que ponen en peligro la supervivencia de estos últimos, y que antropólogos 
+                    y entendidos en el tema asocian con la presión que ejerce la expansión de la frontera extractiva. 
+                    En esa línea sostiene que es indispensable analizar las medidas de mitigación que ahora implementa 
+                    el Ministerio de Justicia, las mismas que a su entender resultan escasas y poco efectivas. Además, 
+                    explica que, aunque hay indicios de presencia de aislados en el ITT, existen otras zonas del Yasuní 
+                    donde se realiza actividad petrolera pese a que se ha documentado la presencia de pueblos en aislamiento.
+                    <br>
+                    Finalmente se refiere al asesinato del waorani Caiga Baihua a manos de indígenas en aislamiento. 
+                    Esto ocurrió en enero pasado en la cuenca del río Shiripuno y a varios kilómetros de otro bloque petrolero, 
+                    el 55 (Armadillo), que opera una empresa bielorrusa.  Un mes después del suceso, el Ministerio de Justicia 
+                    suscribió un acuerdo de paz con la familia de la víctima a fin de que esta se abstenga de llevar a cabo actos 
+                    violentos como los ocurridos en 2013, cuando un grupo waorani se sumergió en el espesor de la selva para vengar 
+                    la muerte de los ancianos Ompore y Buganey y mataron entre 18 y 30 indígenas aislados, aunque el número exacto 
+                    nunca se confirmó. Pichilingue relata que les ofrecieron una compensación consistente en una vivienda y unas 
+                    cabañas ecoturísticas para su comunidad. Siete meses después, el ofrecimiento no se concreta. Mongabay Latam 
+                    intentó por varios medios comunicarse con el Ministerio de Justicia, pero no obtuvo respuesta.
+                    <br>
+                    Milagros Aguirre, quien hasta hace poco dirigió la Fundación Alejandro Labaka, que trabaja por 
+                    el bienestar de las comunidades indígenas y tiene sede en la localidad más cercana al Yasuní, 
+                    Coca, también hace énfasis en la situación de tensión que se vive al interior del parque. 
+                    “[Los Tagaeri-Taromenane] tienen miedo de los helicópteros, de las escopetas, de las máquinas 
+                    que abren caminos… y los otros (waoranis y campesinos) tienen miedo de las lanzas. Y el miedo es mal consejero”.
+                    <a href="Yasuní: Empieza la explotación petrolera en polémico bloque ubicado en la Amazonía ecuatoriana (mongabay.com)">Referencia</a>
+                </p>
+            </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="contenedor1">
+        <h2 class="titulo1-CocaCodo">Coca Codo Sinclair, la mega represa que China construyó en Ecuador, sigue generando pérdidas millonarias</h2>
+        <div class="contenedor-texto1" id="CocaCodo">
+            <img src="Imagenes/CocaCodo.jpg" alt="Imagen de verificación dos pasos" class="FotoLink">
+            <div class="contenido-textos">
+                <div>
+                    <h3><span>1</span>De qué se Trata?</h3>
+                <p class="PrimerTextoCocaCodo">
+                    Coca Codo Sinclair, la enorme represa y central hidroeléctrica construida 
+                    por China en Ecuador, sigue generando pérdidas económicas y amenaza el 
+                    suministro eléctrico del país andino.
+                    <br>
+                    En las intenciones del gobierno del expresidente Rafael Correa (2007–2017), 
+                    que impulsó la obra construida por la empresa china Sinohydro, la planta debía 
+                    producir más de 1.500 megavatios de energía “limpia y renovable” y cubrir un 
+                    tercio de la demanda eléctrica de Ecuador con un tiempo de vida útil de 50 años.
+                    <br>
+                    En las actuales tareas de mantenimiento se hallaron más de 3.500 nuevas fisuras 
+                    en los cuatro distribuidores, superando las 11.000 fallas en total.
+                    <br>
+                    Los defectos de construcción no son el único problema. La central hidroeléctrica, 
+                    que según múltiples investigaciones y expertos se realizó en contra de todos los 
+                    estudios y advertencias sobre las condiciones geológicas de la zona, también está 
+                    amenazada por la fuerte erosión del río Coca desde que se derrumbó la cascada San 
+                    Rafael de 130 metros en la región amazónica en febrero del 2020.
+                    <br>
+                    Por el momento se esperan los resultados de una auditoria independiente realizada 
+                    por una firma alemana y Beijing afirmó que asumirán las responsabilidades necesarias 
+                    en caso de existir.
+                    <br>
+                    Según dijo a El Comercio Carlos Baldeón, presidente del Colegio de Ingenieros 
+                    Mecánicos de Pichincha, la presa necesita la sustitución de todos los distribuidores, 
+                    por un valor cercano a los USD 200 millones.
+                    <br>
+                    La principal preocupación los expertos es que al realizar tantas reparaciones, 
+                    el material puede haber perdido ya sus propiedades originales.
+                </p>
+                <h3><span>2</span>El problema oculto con China</h3>
+                <p class="SegundoTextoCocaCodo">
+                    Al igual que en otros países emergentes o en vías de desarrollo del mundo, 
+                    Beijing fue ingresando poco a poco a la economía de Ecuador como prestamista, 
+                    como inversionista y como constructor de obras públicas, una estrategia en que 
+                    la corrupción juega un papel no menor (todos los funcionarios involucrados en el 
+                    proyecto de la represa terminaron presos por sobornos).
+                    <br>
+                    La consecuencia de esta estrategia es que gran parte de la deuda externa de Ecuador 
+                    fue contraída con bancos de China para realizar mega proyectos como los de Codo Sinclair.
+                    <br>
+                    Una realidad que reduce los márgenes de maniobra del país andino frente al voraz gigante asiático.
+                    <br>
+                    Ecuador mantiene una deuda de alrededor de USD 4.600 millones con los bancos chinos. De este valor, 
+                    USD 400 millones son “deuda concesional” a muy bajo interés y muy largo plazo. Hasta mayo de 2020, 
+                    la deuda con China equivalía al 79% de las obligaciones de Ecuador con otros países.
+                    <br>
+                    El gran problema de la deuda de Ecuador y China es que los barriles de petróleo que se dieron como 
+                    forma de pago no fueron avaluados con el precio internacional del crudo sino que se congeló el precio 
+                    del barril, esto habría provocado cuantiosos perjuicios al Ecuador, pues por cada barril, el país 
+                    perdió alrededor de USD 3.60. Hasta el momento, el país andino ha entregado 1.174 millones de barriles 
+                    como forma de pago.
+                    <a href="“Petrochina”: investigan una enorme trama de corrupción entre Ecuador y China durante el gobierno de Rafael Correa - Infobae">Referencia</a>
+                </p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="contenedor1">
+        <h2 class="titulo1-Perdidas">Estimación de pérdidas y daños ocasionados por el paro nacional de junio de 2022</h2>
+        <div class="contenedor-texto1" id="Perdidas">
+            <img src="Imagenes/header_editorial.png" alt="Imagen titulo" class="FotoLink">
+            <div class="contenido-textos">
+                <div>
+                    <h3><span>1</span>De qué se Trata?</h3>
+                <p class="PrimerTextoPerdidas">
+                    Entre el 13 y 30 de junio de 2022, la economía ecuatoriana fue afectada por movilizaciones a nivel 
+                    nacional que ocasionaron una interrupción de las actividades cotidianas y productivas, las cuales generaron un 
+                    impacto macroeconómico en el país. Ante este contexto, el Banco Central del Ecuador (BCE) estimó las pérdidas y 
+                    daños ocasionados por este paro nacional, con la asistencia técnica del Banco Mundial y el apoyo de instituciones 
+                    tanto públicas como privadas.
+                    Los efectos perjudiciales de las paralizaciones nacionales de junio de 2022 ascendieron a un monto de 
+                    USD 1.115,4 millones, de los cuales USD 1.104,8 millones corresponden a pérdidas y USD 10,6 millones a daños. 
+                    Se estimó una afectación de USD 329,7 millones en el sector petrolero y de USD 785,7 millones 
+                    en el sector no petrolero. Respecto al total de las pérdidas y daños, USD 281,6 millones se presentaron 
+                    en el sector público y USD 833,8 millones ocurrieron en el sector privado.
+                    <br>
+                    <img src="Imagenes/encuesta1.png" alt="encuestas">
+                    <br>
+                    Los cinco sectores más afectados por las paralizaciones fueron: energía e hidrocarburos con USD 329,7 millones, 
+                    comercio con USD 318,1 millones, industria con USD 227,4 millones, agricultura con USD 80,4 millones y turismo 
+                    con USD 56,2 millones. Además, el monto total de pérdidas y daños equivale al salario básico de más de 2,6 millones de personas.
+                    <br>
+                    <img src="Imagenes/grafico-perdidas-danos.png" alt="encuestas2">
+                    <br>
+                    Cabe destacar que, el valor de las pérdidas representa el 1% del Producto Interno Bruto (PIB) corriente 
+                    (USD 116.010 millones) de acuerdo con la previsión macroeconómica del BCE publicada el 15 de septiembre de 2022[1].
+                    Para cuantificar las pérdidas y daños, se aplicó la metodología de Evaluación de Necesidades Post Desastres 
+                    (PDNA, por sus siglas en inglés), desarrollada de manera conjunta entre el Banco Mundial, las Naciones Unidas 
+                    y la Unión Europea y que fue aplicada previamente por el BCE para cuantificar los efectos del paro nacional de octubre 
+                    de 2019 y de la pandemia de covid-19 en 2020.
+                    El efecto de estas paralizaciones se reflejó en una desaceleración de la economía ecuatoriana al crecer en 1,7% de manera interanual 
+                    y en 0,1% respecto al trimestre anterior. De igual forma, como consecuencia de este evento, en conjunto con otros factores 
+                    que inciden en el crecimiento económico, el BCE actualizó a la baja su previsión de crecimiento para el año 2022 a 2,7%, 
+                    lo que representa una reducción de 0,1 puntos porcentuales respecto a la previsión anterior de 2,8%.
+                    <br>
+                    [1] Programación Macroeconómica del Sector Real Anual y Plurianual 2022-2026. Para más información revisar el siguiente 
+                    <a href="//contenido.bce.fin.ec/documentos/Administracion/SectorReal_092022.pdf">enlace.</a>   
+                </p>
+                </div>         
+            </div>
+        </div>
+    </section>
+
+    <section class="contenedor1">
+        <h2 class="titulo1-Perdidas">¿Qué pasó en Ecuador en octubre de 2019?</h2>
+        <div class="contenedor-texto1" id="Perdidas">
+            <div class="contenido-textos">
+                <div>
+                    <h3><span>1</span>De qué se Trata?</h3>
+                <p class="PrimerTexto">
+                    Durante once días, las calles de Ecuador fueron un campo de batalla. Civiles, policías, indígenas y militares 
+                    se enfrentaron los unos con los otros. Las protestas comenzaron el 3 de octubre como consecuencia de la insatisfacción 
+                    de los ecuatorianos con un decreto presidencial que anularía los subsidios a los combustibles. Violencia, terrorismo, 
+                    vandalismo, robos, represión, heridos y muertes fueron el resultado de las protestas. A lo largo de esos días, los 
+                    ecuatorianos experimentaron conductas rebeldes, perdieron su identidad individual y mostraron sentimientos racistas y 
+                    de polarización. A causa de lo ocurrido durante las protestas, este artículo pretende explicar el comportamiento y 
+                    la conducta de los ecuatorianos desde una perspectiva psicológica.
+                    <br>
+                    <br>
+                    En octubre del 2019, el Ecuador vivió once días en los que el terror, la incertidumbre, la anarquía y la violencia 
+                    se tomaron no solamente las calles de Quito, sino de todo el país. Todo inició el 1 de octubre, cuando el presidente 
+                    ecuatoriano Lenin Moreno anunció por cadena nacional la liberación del precio del diésel y la gasolina como parte de 
+                    un conjunto de medidas económicas para estimular la economía de la nación. Inmediatamente, las medidas recibieron el 
+                    rechazo oficial de varias confederaciones y gremios, quienes se declararon en resistencia y anunciaron una serie de 
+                    movilizaciones inmediatas. Algo que comenzó como una manifestación “pacífica” el 3 de octubre por parte del gremio de 
+                    transportistas, se convirtió en uno de los acontecimientos más complejos y violentos de la historia del Ecuador como 
+                    República.
+                    <br>
+                    <br>
+                    Enfrentamientos entre civiles, saqueos, represión policial, robo, heridos, detenidos, muertos, daños a la propiedad 
+                    privada y pública se registraron durante los siguientes días de manifestaciones ¿Por qué los manifestantes salieron 
+                    a protestar? ¿Por qué escaló el conflicto? ¿Qué fue lo que condujo a la población a enfrentarse los unos con los otros? 
+                    ¿Cómo se puede explicar los actos de vandalismo y violencia? ¿Quiénes eran los principales actores de las movilizaciones? 
+                    Estas son algunas de las preguntas que surgen a raíz del paro y cuyas respuestas se explicarán en este artículo en base a 
+                    conceptos utilizados por la psicología social y política.
+                    <br>
+                    <br>
+                    El 3 de octubre el panorama por la mañana en varias ciudades del Ecuador era el mismo: calles bloqueadas, dificultades 
+                    en la movilización, falta de servicios de trasporte, escasa circulación de vehículos y actividades escolares suspendidas.
+                    Así comenzó el primer día de paro anunciado por los trasportistas, quienes, después de 48 horas de suspender sus 
+                    actividades, informaron que estarían a la espera de la respuesta del ejecutivo ante su pedido de derogatoria del 
+                    Decreto 883 y manifestaron que volverían a sus actividades cotidianas. Sin embargo, la ratificación del Gobierno Nacional
+                    en no declinar la medida hizo que más organizaciones sociales se unan al paro, principalmente la Confederación de 
+                    Nacionalidades Indígenas del Ecuador (CONAIE) ¿Qué llevó a que los transportistas y organizaciones sociales hayan 
+                    paralizado al Ecuador durante 11 días?
+                    <br>
+                    <br>
+                    Bajo los conceptos de la psicología social, lo que motivó a los trasportistas y a los miembros de distintas 
+                    organizaciones a paralizar el Ecuador fue una noción de injusticia percibida y reactancia. La injusticia percibida 
+                    se interpreta como una cognición que evalúa y engloba elementos de pérdida y una sensación de injusticia e 
+                    irreparabilidad (Sullivan et al. 2012, 484). Como consecuencia de la injusticia percibida, surge la reactancia 
+                    la cual es una acción sustentada en una base emocional, dirigida a la restitución de reglas o comportamientos que 
+                    amenazan libertades y genera reacciones alternativas como conductas de oposición, rebeldía, comportamientos semejantes 
+                    al restringido y respuestas agresivas (Chappa y Dowd 2008, 210). Es debido a la injusticia percibida y a la reactancia 
+                    psicológica que tanto indígenas como transportistas y otros manifestantes sintieron que con el “paquetazo” económico 
+                    se les estaba haciendo un mal y, por lo tanto, salieron a protestar ante aquello que les pareció injusto.
+                    <br>
+                    <br>
+                    Durante los siguientes días de manifestaciones el conflicto escaló. Las calles de Quito se convirtieron en un campo 
+                    de batalla entre civiles, policías y militares. Dotados de piedras, palos, y bombas molotov[1], los manifestantes 
+                    atacaban a policías quienes respondían con disparos de gas lacrimógeno. La violencia, que en un inicio se concentraba
+                    en el centro histórico de Quito y sus alrededores, se extendió por todo el país. La anarquía se apoderó de la ciudad 
+                    y desató actos vandálicos como daños a la propiedad pública y privada, atracos a tiendas, invasión de centros de 
+                    atención médica, robos e incendios. La violencia y vandalismo alcanzaron niveles de guerrilla urbana, planificada 
+                    y muy agresiva que pudieron llegar a una guerrilla civil. ¿Qué fue lo que motivó a los ciudadanos a combatir unos 
+                    con otros y a cometer actos de violencia y vandalismo? 
+                    <br>
+                    <br>
+                    La respuesta a esta pregunta está en lo que los psicólogos sociales llaman desindividuación social. Tal término 
+                    hace referencia al proceso mediante el cual los individuos que se encuentran en un grupo pierden el sentido de 
+                    identidad personal y hacen cosas que no harían si estuvieran solos (Worcher et al. 2002, 421). Al estar dentro 
+                    de una multitud, las personas se vuelven anónimas por lo que pierden su sentido de responsabilidad y se tornan 
+                    más sugestionables (Worcher et al. 2002, 422). Es precisamente la desindividuación social lo que condujo a los 
+                    ecuatorianos a actuar sin pensar en sus propios valores, a ser menos conscientes de sí mismos, a experimentar 
+                    sensaciones de excitación y a sacar “la bestia” que cada uno lleva dentro. 
+                    <br>
+                    <br>
+                    Además de las pérdidas económicas, el daño a la propiedad pública y privada, el encarcelamiento de manifestantes 
+                    y la muerte de civiles, el Paro Nacional reveló que somos un país profundamente dividido e intolerante. Donde 
+                    gobiernan rasgos de odio racista y desprecio en contra de los indígenas, entre diversos grupos y clases sociales. 
+                    Durante los días del paro, se expresaron e incrementaron los estereotipos, las descalificaciones y la población 
+                    ecuatoriana se dividió en dos bandos: se estaba a favor de los indígenas o en su contra. En términos de la psicología 
+                    social, el ecuatoriano tomó posiciones extremistas y, al hacerlo, se identificó con un grupo y asumió su forma de 
+                    captar el problema lo que lo condujo a rechazar al otro (Lozada 2004, 200). El tomar una posición extremista hizo 
+                    que la mayoría de mestizos y gente de clase social media y media alta perciban a los indígenas como el enemigo y 
+                    desarrollen sentimientos de rechazo hacia ellos.
+                    <br>
+                    <br>
+                    Mientras duraba el paro, las redes sociales mostraban el odio y el racismo, hacia los indígenas con toda clase de 
+                    insultos como: “indios ignorantes”, “vagos”, “longos” o “regresen al páramo”.[2] Los hechos y los actos registrados 
+                    durante las movilizaciones ya no se medían por lo que eran en sí, sino en función de lo que representaban a favor o 
+                    en contra de la confrontación: nosotros-ellos (Lozada 2004, 200). Esta toma de posiciones extremistas junto con 
+                    la percepción estereotipada fue lo que dificultó las posibilidades de dialogar, de llegar a acuerdos y a propuestas 
+                    de solución lo que creó una paralización de valores sociales y morales en la sociedad ecuatoriana
+                    En los días que duró el paro, los principales actores fueron los policías y militares, los indígenas y un grupo de 
+                    manifestantes violentos que no fueron reconocidos como parte del conglomerado indígena. El primer grupo, militares y 
+                    policías, estaban encabezados por el presidente de la República. Moreno, en su calidad de líder, actuó erróneamente 
+                    desde un principio al no utilizar un pensamiento estratégico[3] en la toma de decisiones. Si tan solo Moreno hubiese 
+                    empleado la lógica, la intuición, la meta-cognición, la imaginación, la capacidad analítica y un análisis de medios 
+                    antes de ejecutar el Decreto 883, seguramente la reacción del pueblo ecuatoriano ante las medidas económicas hubiese 
+                    sido distinta.
+                    <br>
+                    <br>
+                    El segundo grupo, los indígenas, estaban liderados por Jaime Vargas quien actualmente es presidente de la CONAIE. 
+                    Vargas, con una personalidad prepotente, mostró una tendencia a la dominación y al poder motivada por una falta de 
+                    estabilidad, seguridad y sano equilibrio. Con sus declaraciones, Vargas demostró su carencia de respeto e interés 
+                    por los seres humanos, su falta de sensatez, moderación y una personalidad poco adaptada, además de una desmedida 
+                    ambición de poder y figura política. Ningún líder con alta salud mental[4] se referiría al presidente de la 
+                    República con insultos, promovería la violencia o incitaría al caos. Vargas lo hizo, realizó todo lo contrario 
+                    a lo que haría un líder con elevada salud mental: curar antiguas y complejas heridas sociales, políticas, económicas 
+                    y culturales de los pueblos (Costales 2011, 26). Así, en lugar de actuar como un líder con elevada salud mental, 
+                    Vargas incitó al caos, llamó a la violencia y despertó sentimientos racistas en el pueblo ecuatoriano.
+                    Por último, el tercer actor era un grupo de manifestantes violentos que no fueron reconocidos como indígenas, 
+                    pero que ocasionaron destrozos, terrorismo y vandalismo con una sola intención: desestabilizar al gobierno para 
+                    que se llame a elecciones presidenciales anticipadas. Aquel que dirigía a este grupo de vándalos es un individuo 
+                    con sed de poder y víctima del Síndrome de Hybris[5], quien utilizó la manipulación mental y sentimental para dar 
+                    un golpe de estado y destituir a Moreno. Si sus planes hubiesen triunfado, seguramente este individuo hubiese vuelto 
+                    al Ecuador como un mesías, un todo poderoso, un salvador mágico que traería dicha, prosperidad y justicia al país 
+                    después del caos. Sin embargo, aquella imagen de salvador sería solo un disfraz para ocultar sus más profundas 
+                    aspiraciones: volver y permanecer en el poder.
+                    <br>
+                    <br>
+                    Las movilizaciones sociales de octubre rebasaron todos los límites. No solamente se trató de una protesta en contra 
+                    del “paquetazo” económico, sino que consistió en un atentado en contra del respeto y la paz de una sociedad que 
+                    está cansada de los golpes de Estado y que repudia la violencia. Las pérdidas económicas y los daños a la propiedad 
+                    pública y privada no son lo peor que dejó el paro, el resultado más preocupante es la división y fracturación de un 
+                    Ecuador que desde hace mucho tiempo se encontraba en un proceso de cohesión social. A partir de este momento, 
+                    está en las manos de las autoridades, de los líderes indígenas y de la población nacional el asumir sus 
+                    responsabilidades, aliviar las tensiones y buscar la reconciliación nacional. Es ahora cuando las autoridades 
+                    ecuatorianas deberían mostrar la principal cualidad de un líder: sanar complejas heridas de los pueblos.
+                    <br>
+                </p>
+                </div>         
+            </div>
+        </div>
+    </section>
+
+    <section class="contenedor1">
+        <h2 class="titulo1-Perdidas">Protestas en Ecuador: las imágenes de los violentos enfrentamientos en la manifestación indígena en Quito</h2>
+        <div class="contenedor-texto1" id="Perdidas">
+            <img src="Imagenes/protesta.jpg" alt="Imagen titulo" class="FotoLink">
+            <div class="contenido-textos">
+                <div>
+                    <h3><span>1</span>De qué se Trata?</h3>
+                <p class="PrimerTexto">
+                    <strong>El noveno día de protestas en Ecuador estuvo marcado por enfrentamientos entre las fuerzas de seguridad y los manifestantes, 
+                    que siguen pidiendo reformas económicas, sociales y políticas al gobierno del presidente Guillermo Lasso en el marco de una economía 
+                    golpeada por la inflación y el desempleo.</strong> 
+                    <br>
+                    La jornada de este martes se concentró en <b>Quito</b>, la capital del país, a donde llegaron miles de personas pertenecientes a comunidades 
+                    indígenas, así como trabajadores y estudiantes, en el marco de un segundo estado de excepción decretado por el primer mandatario el 
+                    lunes.
+                    Uno de los encontronazos más significativos ocurrió en el campus de la <b>Universidad Central de Ecuador,</b> reportaron varios medios.
+                    <br>
+                    <img src="Imagenes/conflicto1.jpg" alt="imagen_comflicto1">
+                    <br>
+                    Mientras las autoridades ecuatorianas trataban de dispersar a las masas con gases lacrimógenos y proyectiles, 
+                    los manifestantes respondieron arrojando palos.
+                    <br>
+                    <br>
+                    Aunque la atención se concentró este martes en la capital, se han reportado manifestaciones en la mayoría de 
+                    las provincias de Ecuador. Durante los nueve días de paro indefinido se han bloqueado importantes carreteras y 
+                    edificios públicos.
+                    <br>
+                    <img src="Imagenes/comflicto2.png" alt="imagen_comflicto2">
+                    <br>
+                    <img src="Imagenes/conflicto3.jpg" alt="imagen_comflicto1">
+                    <br>
+                    <br>
+                    Son seis las provincias bajo el estado de emergencia de Lasso, incluida Pichincha, donde se ubica Quito.
+                    De acuerdo con <b>Leonidas Iza, </b>líder de la CONAIE, organización que reúne a los pueblos originarios del país 
+                    sudamericano, 100 personas resultaron heridas. Otras dos han fallecido.
+                    <br>
+                    <img src="Imagenes/conflicto4.jpg" alt="imagen_comflicto1">
+                    <br>
+                    <img src="Imagenes/conflicto5.jpg" alt="imagen_comflicto1">
+                    <br>
+                    <br>
+                    El presidente Lasso accedió este martes a reunirse con las comunidades indígenas para atender sus exigencias, 
+                    que incluyen bajar el precio de los combustibles, ampliar plazos para pagar sus deudas, respetar sus territorios 
+                    y aumentar los gastos del gobierno en agencias clave.
+                    La CONAIE ha dicho que no hablará con el presidente hasta que no levante el estado de emergencia y retire a las 
+                    fuerzas de seguridad de los lugares en donde tienen planificado protestar.
+                    <br>
+                </p>
+                </div>         
+            </div>
+        </div>
+    </section>
+
+    <section class="contenedor1">
+        <h2 class="titulo1-Perdidas">Ospina Peralta, Pablo. 2022. El Paro Nacional de junio 2022 ¡Otra vez la CONAIE!. Ecuador Debate, 116: 11-27.</h2>
+        <div class="contenedor-texto1" id="Perdidas">
+            <a href="https://repositorio.flacsoandes.edu.ec/handle/10469/18826?mode=full">Biblioteca Digital de Vanguardia
+                para la Investigación en Ciencias Sociales</a>
+                <br>
+            <p>REPOSITORIO - REGIÓN ANDINA Y AMÉRICA LATINA</p>     
+    </section>
+
+    <section class="contenedor1">
+        <h2 class="titulo1">Aumentar la seguridad de tus contraseñas</h2>
+        <div class="contenedor-texto1">
+            <img src="Imagenes/FotoClaveSegura.jpg" alt="Imagen de Seguridad contraseña" class="FotoLink">
+            <div class="contenido-textos">
+                <h3><span>1</span>De qué se Trata?</h3>
+                <p>
+                    Al cabo del día accedemos a decenas de plataformas, redes y lugares que requieren del uso de contraseñas. Es de vital importancia que éstas sean fuertes y seguras para evitar el robo de datos personales y cuentas.
+                </p>
+                <h3><span>2</span>Cuál es el Proposito?</h3>
+                <p>
+                    Debemos alejarnos de la utilización de datos de fácil acceso, como la fecha de cumpleaños o números en serie. Es recomendable el uso de mayúsculas intercaladas, números o símbolos. Además, debemos cambiarlas con frecuencia. <br>
+                    Para asegurarse de ello es conveniente gestionarlas desde un solo sitio. Actualmente existen gestores de contraseñas que te ayudan a realizar dicha tarea. <br>
+                    De este modo, con una única clave memorizada, podrás tener acceso a todas tus credenciales, cosa muy útil sobre todo para empresas, las cuales hacen uso de muchos más sitios donde se requiere un registro.<br>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="contenedor1">
+        <h2 class="titulo1">Use redes abiertas solo en casos necesarios</h2>
+        <div class="contenedor-texto1">
+            <img src="Imagenes/RedAbierta.jpg" alt="Imagen de RedAbierta" class="FotoLink">
+            <div class="contenido-textos">
+                <h3><span>1</span>De qué se Trata?</h3>
+                <p>
+                    Una conexión abierta es más propensa a permitir el acceso a los datos del usuario; trate en la medida posible reducir su uso en portales con información sensible y que esta sea necesaria. Conéctese a redes que conozca o que estén protegidas a su vez por contraseñas.
+                </p>
+                <h3><span>2</span>Cuál es el Proposito?</h3>
+                <p>
+                    Persisten muchos riesgos al conectarse a una red WiFi abierta o gratuita. Falta de privacidad, suplantación de identidad, Infección de dispositivos, robo de datos sensibles, son algunos de los peligros que los usuarios corren ante esta práctica.<br>
+                    Conectarse a las redes WiFi públicas y gratuitas que nos rodean es tentador. Nos evitan tener que usar los datos móviles de nuestro contrato, pero los riesgos que asumimos al conectarnos a ellas son enormes. <br>
+                    Las VPNs, el mejor mecanismo de defensa al conectarte a una WiFi pública, es por tanto recomendable hacer uso de una VPN de pago que además garantice ciertas opciones: por ejemplo, que no haya registro de actividad de uso y tampoco registro de las conexiones o que se use un cifrado fuerte en las conexiones.<br>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="contenedor1">
+        <h2 class="titulo1">Descargas Seguras</h2>
+        <div class="contenedor-texto1">
+            <img src="Imagenes/FotoDownload.jpg" alt="Imagen de DescargaSegura" class="FotoLink">
+            <div class="contenido-textos">
+                <h3><span>1</span>De qué se Trata?</h3>
+                <p>
+                    Descargar cualquier clase de archivo de Internet es un proceso mecánico y rutinario que en ocasiones esconde más riesgos de los que podemos apreciar a primera vista. Muchos programas o aplicaciones son un nido de malware que pueden infectar nuestro sistema informático o dispositivo móvil y causarnos muchos quebraderos de cabeza en el futuro. Vamos a repasar algunas directrices clave para evitar descargar virus y aplicaciones maliciosas siguiendo unas pautas de seguridad.
+                </p>
+                <h3><span>2</span>Cuál es el Proposito?</h3>
+                <p>
+                    Si vamos a bajar algún programa, complemento o en definitiva algún archivo para actualizar o completar nuestro equipo, siempre es recomendable hacerlo directamente desde la página web del fabricante de un dispositivo en cuestión (en el caso de hardware para el ordenador por ejemplo) o el autor de un determinado software ya que nos ayudará a encontrarnos con sorpresas no deseadas.<br>
+                    El malware puede esconderse tras cualquier descarga pero por norma general, las tiendas oficiales de aplicaciones como Windows Store, la App Store de Apple o Google Play realizarán un control más exhaustivo que tiendas de aplicaciones de terceros donde los controles de calidad no son tan rigurosos y existe una mayor libertad de publicar. <br>
+                    <br>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container_footer" id="enlaceReferencias">
+            <div class="box_footer">
+                <div class="logo">
+                    <img src="Imagenes/logoFooter2.png" alt="Sistemas de información">
+                </div>
+                <div class="terms">
+                    <p>
+                        El Día Internacional de Internet Seguro (Safe Internet Day), es un evento de gran envergadura, que fue propuesto por la red INSAFE y apoyado por la Unión Europea. Se celebra el segundo día de la segunda semana del segundo mes del año, o lo que es lo mismo, el segundo martes de febrero.
+                    </p>
+                </div>
+            </div>
+            <div class="box_footer">
+                <h2>Referencias</h2>
+                <a href="https://www.is4k.es/programas/dia-de-internet-segura">Internet Segura</a>
+                <a href="https://www.diainternacionalde.com/ficha/dia-internacional-internet-seguro">Dia Internacional</a>
+                <a href="https://www.thinkwithgoogle.com/intl/es-es/estrategias-de-marketing/aplicaciones-y-moviles/el-dia-internacional-de-internet-segura-5-consejos-de-google-que-te-permitiran-estar-mas-seguro-online/">Google Security</a>
+                <a href="https://www.unicef.es/educa/dias-mundiales/dia-internet-segura">Unicef</a>
+            </div>
+            <div class="box_footer">
+                <h2>Videos</h2>
+                <a href="https://www.youtube.com/watch?v=yW4EmNXVt-g">Fundacion Vodafone</a>
+                <a href="https://www.youtube.com/watch?v=ytxYtEhnP0E">Ciberseguridad</a>
+                <a href="https://www.youtube.com/watch?v=t-x73w1N1os">Recomendaciones</a>
+                <a href="https://www.youtube.com/watch?v=BkCSFxZwLmg">Internet Segura 2018</a>
+            </div>
+            <div class="box_footer">
+                <h2>Redes Sociales</h2>
+                <a href="https://www.facebook.com/incibe"><i class="fa-brands fa-facebook-square"></i> Facebook</a>
+                <a href="https://t.me/INCIBE"><i class="fa-brands fa-telegram"></i> Telegram</a>
+                <a href="https://www.instagram.com/incibe/"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                <a href="https://vk.com/?lang=en"><i class="fa-brands fa-vk"></i> VK</a>
+            </div>
+        </div>
+        <div class="box_copyright">
+            <hr>
+            <p>
+                Todos los derechos reservados (c) <b>2022 SISTEMAS DE INFORMACION</b>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

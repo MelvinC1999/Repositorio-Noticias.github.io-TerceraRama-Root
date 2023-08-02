@@ -1,0 +1,492 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+    /*border: 1px solid red;*/
+}
+body{
+    height: 12910px;
+}
+.bannerInicio{
+    height:890px;
+
+}
+.bannerInicio img{
+    width: 100%;
+}
+.bannerInicio h1{
+    position: relative;
+    top: -250px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    height: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80px;
+
+}
+/*
+
+    SLIDERS DE LA PORTADA
+
+*/
+.slider-frame{
+    /*max-width: 1000px;*/
+    height: 600px;
+    width: 1280px;
+    margin: 50px auto 0;
+    overflow: hidden;
+    position: relative;
+    top: -1010px;
+}
+.slider-frame ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: slide 15s infinite alternate ease-in-out; /*Asi llamamos la animacion y dandole tiempo*/
+}
+.slider-frame li{
+    list-style: none;
+    width: 100%;
+}
+.slider-frame img{
+    width: 100%;
+}
+@keyframes slide{
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+    
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+/*
+
+END de las sliders
+s
+La imaagen del logo de la UCE
+
+*/
+.Objetivo{
+    position: relative;
+    top: 100px;
+    /*border: 1px solid black;*/
+    height: 220px;
+}
+.Objetivo img{
+    position: relative;
+    left: 70%;
+/*    opacity: 0.5;
+    transition: all 0.5s;*/
+}
+.Objetivo h2{
+    text-align: center;
+    width: 70%;
+    position: relative;
+    top: -200px;
+}
+.Objetivo p{
+    text-align: center;
+    width: 50%;
+    position: relative;
+    top: -150px;
+    left: 15%;
+}
+/*
+
+Efectos de traslado
+
+*/
+img{
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+.transform_up{transform: translateY(20%);}
+.transform_down{transform: translateY(-20%);}
+.transform_left{transform: translateY(20%);}
+.transform_right{transform: translateY(-20%);}
+
+.aparece{
+    opacity: 1;
+    transform: none;
+}
+/*
+END fin de las trnasisciones
+
+Lista de los temas
+*/
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+.Lista {
+    position: relative;
+    top: 200px;
+    font-family: 'Titillium Web';
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+}
+.Lista * {
+    box-sizing: border-box;
+    transition: all .35s ease;
+}
+.Lista li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: .5em 1em;
+    padding: 0;
+}
+.Lista a{
+    padding: .5em .8em;
+    color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+}
+.Lista a::before,
+.Lista a::after{
+    content: '';
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+}
+.Lista a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid #3E8914;
+    border-right: 3px solid #2E640F;
+    transform: translate(-100%, 50%);
+}
+.Lista a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid #2E640F;
+    border-left: 3px solid #3E8914;
+    transform: translate(100%, -50%)
+}
+.Lista a:hover:before,
+.Lista a:hover:after{
+  transform: translate(0,0);
+  opacity: 1;
+}
+.Lista a:hover {
+    color: green;
+}
+/**
+    MENU de las NOTICAS 
+*/
+.Menu-Noticas{
+    position: relative;
+    top: 25px;
+    /*border: 1px solid blue;*/
+}
+/*
+    END menu de las noticias
+*/
+/*
+END LISTA DE TEMAAS
+
+Hacemos un segungo banner
+*/
+.banner2{
+    width: 100%;
+    height: 600px;
+    animation: banner2 10s infinite linear alternate;
+    background-size: 100% 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 320px;
+    /*border-color: aqua;*/
+}
+@keyframes banner2{
+    0%, 20%{
+        background-image: url(Imagenes/Banner01.jpeg);
+    }
+    25%, 45%{
+        background-image: url(Imagenes/Banner02.jpg);
+    }
+    50%, 70%{
+        background-image: url(Imagenes/Banner03.jpg);
+    }
+    75%, 100%{
+        background-image: url(Imagenes/Banner04.jpg);
+    }
+}
+.capa{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    /*border-color: gold;*/
+}
+.info{
+    z-index: 1;
+    width: 100%;
+    max-width: 550px;
+    text-align: center;
+    position: relative;
+    left: 33%;
+    top: 15%;
+}
+.info h1{
+    color: #fff;
+    font-size: 45px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+.info p{
+    color: #c7c7c7;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+.info a{
+    color: #fff;
+    text-decoration: none;
+    background: #3088e0;
+    padding: 16px 37px;
+    display: inline-block;
+    border-radius: 50px;
+}
+/*
+END el la trnasicion de los baners
+
+CUerpero de la pagina
+*/
+.contenedor1{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+.titulo1{
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+    top: 200px;
+    left: 60%;
+}
+.Tema1-LinkMalo{
+    width: 100%;
+    height: 600px;
+    background: #DA4453;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(317, 61%, 33%, 0.681), hsla(354, 67%, 56%, 0.535)), url(Imagenes/MundoBanner.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(317, 61%, 33%, 0.681), hsla(354, 67%, 56%, 0.535)), url(Imagenes/MundoBanner.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: relative;
+    top: 500px;
+    background-size: cover;
+    background-attachment:fixed ;
+}
+.Tema1-LinkMalo h1{
+    text-align: center;
+    position: relative;
+    top: 200px;
+    font-size: 100px;
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.contenedor1{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 400px;
+    height: 1500px;
+}
+.FotoLink{
+    opacity: 1;
+    width: 48%;
+    position: relative;
+    top: 90px;
+    left: 0%;
+}
+.texto1 .contenido-textos{
+    width: 50%;
+}
+.contenido-textos{
+    position: relative;
+    top: 150px;
+    height: 600px;
+}
+.contenedor-texto1{
+    border: solid red;
+    position: relative;
+}
+/*////////////////////////////////////////////////////////////////////////////*/
+.contenido-textos-yasuni{
+    position: relative;
+    top: 1px;
+    left: 200px;
+    height: 900px;
+    width: 1000px;
+}
+.SegundoParrafoYasuni{
+    position: relative;
+    top: 1px;
+    left: -300px;
+    height: 900px;
+    width: 1000px;
+}
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/*=================================================================================*/
+.titulo1-CocaCodo{
+    position: relative;
+    left: 660px;
+    top: 100px;
+}
+.PrimerTextoCocaCodo{
+    position: relative;
+    left: -200px;
+    border: solid red;
+}
+.SegundoTextoCocaCodo{
+    border: solid red;
+    position: relative;
+    left: -200px;
+}
+/*=================================================================================*/
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+.contenido-textos h3 span{
+    background: #4d0686;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    /*border: solid red;*/
+    text-align: justify;
+}
+/*
+END para el baner deslador, con el titulo problemas de la internet
+
+Otro banner
+*/
+.Tema2-Tips{
+    width: 100%;
+    height: 600px;
+    background: #DA4453;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(317, 61%, 33%, 0.681), hsla(354, 67%, 56%, 0.535)), url(Imagenes/BannerEcuador.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(317, 61%, 33%, 0.681), hsla(354, 67%, 56%, 0.535)), url(Imagenes/BannerEcuador.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: relative;
+    top: 500px;
+    background-size: cover;
+    background-attachment:fixed ;
+}
+.Tema2-Tips h1{
+    text-align: center;
+    position: relative;
+    top: 200px;
+    font-size: 100px;
+}
+.tituloYasuni{
+    text-align: center;
+    position: relative;
+    left: 70%;
+    top: 100px;
+    font-size: 30px;
+    /*border: solid red;*/
+}
+.PrimerParrafoYasuni{
+    position: relative;
+    left: -30%;
+    width: 100%;
+    /*border: solid red;*/
+}
+/*
+END el contenido con imagenes y parrafos
+
+el footer
+*/
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url(Imagenes/Footer-Background3.png);
+    background-size: cover;
+
+    position: relative;
+    top: 500px;
+}
+.container_footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+.box_footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+.box_footer .logo img{
+    width: 180px;
+    opacity: 1;
+}
+.box_footer .terms{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: whitesmoke;
+    font-size: 18px;
+}
+.box_footer h2{
+    margin-bottom: 30px;
+    color: rgb(35, 188, 249);
+    font-weight: 700;
+}
+.box_footer a{
+    margin-top: 10px;
+    color: #acffd8;
+    font-weight: 600;
+    text-decoration: none;
+}
+.box_footer a:hover{
+    opacity: 0.8;
+}
+.box_footer a .fab{
+    font-size: 20px;
+}
+.box_copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+.box_copyright p{
+    margin-top: 20px;
+    color: slategray;
+}
+.box_copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
+

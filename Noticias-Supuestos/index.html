@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCE - Noticias</title>
+    <link rel="icon" href="Imagenes/icono-candado.png">
+    <!--CUSTOM CSS.  aqui llamamos al codigo de css-->
+    <link rel="stylesheet" href="InicioEstilo.css">
+    <link rel="stylesheet" href="Responsive.css">
+    <!--Acciones js. Aqui llamamos al archivo javascript coneccion-->
+    <script src="Acciones.js"></script>
+    <!--Para obtener los iconos de otra pagina web-->
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="bannerInicio">
+        <img src="Imagenes/BannerAzul01.jpg" class="fade_up">
+        <h1 class="Titulo">Desarrollo de Sistemas</h1>
+        <div class="slider-frame">
+            <ul>
+                <li><img src="Imagenes/Slider01.jpg" class="fade_up" alt=""></li>
+                <li><img src="Imagenes/Slider02.jpg" class="fade_up" alt=""></li>
+                <li><img src="Imagenes/Slider03.jpg" class="fade_up" alt=""></li>
+                <li><img src="Imagenes/Slider04.jpg" class="fade_up" alt=""></li>
+            </ul>
+        </div>
+    </div>
+    <div class="Objetivo">
+        <img src="Imagenes/LogoUce.png" class="fade_down">
+        <h2 class="Bienvenida">  Bienvenido</h2>
+        <p class="Parrafo-Bienvenida">
+            Hola! Que tal, el objetivo de esta pagina es detallarte un poco sobre diversos acontecimientos que han sucitado en el pais,
+            como disturbios que se han generado por problemas sociales, politicos y economicos o noticas dispersas que marcan la historia, 
+            describiendo las caracteristicas que han tenido cada una de ellas, las consecuencias, detalles mas importantes, ademas de 
+            contar con cierta informacion que solo son supuestos pero que son interesntes poder saber, conocer y tener en cuenta. 
+        </p>
+    </div>
+    <div class="Lista">
+        <ul class="Temas">
+            <li><a href="#">Home</a></li>
+            <li><a href="#enlaceAbout">About</a></li>
+            <!--<li><a href="#enlaceBanner1">Problemas con la Internet</a></li>
+            <li><a href="#enlaceTips">Tips Internet Segura</a></li>-->
+            <li><a href="#enlaceReferencias">Referencias</a></li>
+        </ul>
+        <div class="Menu-Noticas">
+            <h1>Titulos de la Noticias</h1>
+            <select onchange="window.location.href=this.value">
+                <option value="">Bienvenido</option>
+                <option value="#RusiaUcrania">Rusia invade Ucrania</option>
+                <option value="#">Otra noticia internacional</option>
+                <option value="#yasuni">Explotación Yasuni</option>
+                <option value="#CocaCodo">hidroeléctrica Coca Codo</option>
+            </select>
+        </div>
+    </div>
+    <div class="banner2" id="enlaceAbout">
+        <div class="capa">
+            <div class="info">
+                <h1>Introduccion</h1>
+                <p>
+                    Tener noticias importantes en una página web es muy valioso por varias razones. 
+                    En primer lugar, las noticias son una forma de mantener a los visitantes informados 
+                    sobre los últimos acontecimientos y desarrollos en el mundo. Esto puede incluir noticias 
+                    sobre política, economía, deportes, entretenimiento, ciencia y tecnología, entre otros temas.
+                </p>
+                <a href="https://bibliotecadigital.udea.edu.co/">Leer Mas</a>
+            </div>
+        </div>   
+    </div>
+    <div class="Tema1-LinkMalo" id="enlaceBanner1"> <!--Coigo copiado del internet-->
+        <div class="titulo-banerNoticia">
+            <h1>Repositorio de Noticias Internacionales</h1>
+        </div>
+        <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C150.00,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
+    </div>
+    <main>
+        <section class="contenedor1">
+            <h2 class="titulo1">Rusia invade Ucrania</h2>
+            <div class="contenedor-texto1" id="RusiaUcrania">
+                <img src="Imagenes/RusiaUcrania.jpeg" alt="Probelma1" class="FotoLink">
+                <div class="contenido-textos">
+                    <h3><span>1</span>De qué se Trata?</h3>
+                    <p>
+                        Una operación militar rusa por tierra, aire y mar que comenzó después 
+                        de un discurso televisivo antes del amanecer en el que el presidente 
+                        Vladimir Putin exigió que el ejército de Ucrania depusiera las armas. 
+                    </p>
+                    <h3><span>2</span>Cuando sucedio el hecho?</h3>
+                    <p>
+                        Tras meses de tensiones crecientes, en los que Rusia concentró tropas a lo largo de las fronteras
+                         de Ucrania, este 24 de febrero, Putin dio luz verde a la invasión.
+                        El presidente Volodymir Zelensky afirmó que las fuerzas ucranianas se están defendiendo, 
+                        pero hay varios frentes abiertos en distintos puntos de país, incluso cerca de la capital Kiev.
+                        <a href="https://www.bbc.com/mundo/noticias-internacional-60514738#:~:text=24%20febrero%202022%20Si%20no%20puedes%20ver%20el,que%20el%20ej%C3%A9rcito%20de%20Ucrania%20depusiera%20las%20armas.">Referencia</a>
+                    </p>
+                    <h3><span>3</span>Supuestos</h3>
+                    <p>The Sun volvió a abordar el tema de la invasión rusa, pero señaló que Ucrania podría ser
+                        "solo el primer paso" en las acciones militares de Moscú, que posteriormente intentaría invadir 
+                        Lituania, Letonia y Estonia "al estilo de Hitler".
+                        Según el tabloide, Rusia ya había actuado "al estilo de Hitler" en Crimea y Georgia. 
+                        The Sun también citó las declaraciones de Alan West, almirante retirado de la Marina Real 
+                        británica, quien aseveró que cualquier guerra entre Rusia y los países bálticos podría provocar 
+                        una tercera guerra mundial.
+                        <a href="https://actualidad.rt.com/actualidad/420204-invasion-rusa-ucrania-fake-prensa-occidental">Referencia</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="contenedor1">
+            <h2 class="titulo1">Desinformación</h2>
+            <div class="contenedor-texto1">
+                <img src="Imagenes/FotoDesinformacion.jpg" alt="Imagen de Desinformacion" class="FotoLink">
+                <div class="contenido-textos">
+                    <h3><span>1</span>De qué se Trata?</h3>
+                    <p>
+                        La desinformación​ es información falsa o engañosa​ que se difunde de manera intencionada para engañar e intentar manipular las creencias, emociones y opiniones del público en general. Este es un subconjunto de la información errónea y está relacionada estrechamente con la propaganda y las fake news. 
+                    </p>
+                    <h3><span>2</span>Cómo Protegerse?</h3>
+                    <p>
+                        Investiga la fuente. Cuando la leíste, ¿venía el nombre de la página donde se publicó originalmente, el autor, una marca de agua? Una vez que tienes algo de esto, lee más de su contenido: ¿suele compartir información confiable, o se concentra más en noticias amarillistas o que nadie ha comentado nunca?<br>
+                        Googlea el titular o una parte de su contenido. Así puedes saber si hay más medios hablando del tema. Quizá eso te ayude a encontrar una fuente más confiable o la voz de un experto sobre lo que acabas de enterarte.<br>
+                        Si la nota tiene una imagen, búscala. A veces la supuesta noticia se basa en una foto. Si es falsa, la imagen está sacada de contexto y, al buscarla en Google Images, te darás cuenta de qué se trata realmente.<br>
+                        
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="contenedor1">
+            <h2 class="titulo1">Software Desactualizado </h2>
+            <div class="contenedor-texto1">
+                <img src="Imagenes/FotoDesactualiza.jpg" alt="Imagen de Software Desactualizado" class="FotoLink">
+                <div class="contenido-textos">
+                    <h3><span>1</span>De qué se Trata?</h3>
+                    <p>
+                        Los actores maliciosos reconocen las vulnerabilidades más conocidas en sistemas operativos, utilizan el mismo enfoque para la navegación web. Muchos ordenadores portátiles tienen un software de búsqueda que los pone en riesgo, permitiendo a hackers acceder al historial del navegador, lo que puede a su vez poner en riesgo toda la información de inicio de sesión. 
+                    </p>
+                    <h3><span>2</span>Cómo Protegerse?</h3>
+                    <p>
+                        Todos estamos expuestos a este tipo de amenazas, por eso es de suma importancia estar al corriente con las actualizaciones de todo tipo de softwares en nuestro ordenador. Los desarrolladores parchean todas las posibles vulnerabilidades con actualizaciones y bloquean la entrada de los hackers.<br>
+                        Una vez que un fabricante ya no admite o vende cierto software o hardware, su riesgo de seguridad general aumentará día a día. Esto significa que debe acelerar su proceso de planificación. Sin embargo, actualizar sus soluciones le tomará tiempo, lo que significa que correrá un riesgo enorme hasta que se complete su iniciativa.<br>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="contenedor1">
+            <h2 class="titulo1">Cyberbullying</h2>
+            <div class="contenedor-texto1">
+                <img src="Imagenes/FotoBullying.png" alt="Imagen de Bullying" class="FotoLink">
+                <div class="contenido-textos">
+                    <h3><span>1</span>De que se Trata?</h3>
+                    <p>
+                        Ciberacoso es acoso o intimidación por medio de las tecnologías digitales. Puede ocurrir en las redes sociales, las plataformas de mensajería, las plataformas de juegos y los teléfonos móviles. Es un comportamiento que se repite y que busca atemorizar, enfadar o humillar a otras personas.  
+                    </p>
+                    <h3><span>2</span>Cómo Protegerse?</h3>
+                    <p>
+                        Es necesario un conocimiento por parte de alumnos, padres y profesores sobre estos casos de acoso y cómo deben actuar.<br>
+                        Los alumnos deben saber cómo responder afirmativamente ante un caso de ciberacoso. Los padres y profesores deben conocer los protocolos existentes en caso de que se produzca esta situación.<br>
+                        Implementar acciones que dificulten que a los menores lleguen personas con esas intenciones, que pasan por educar al menor en lo que tiene que ver con la gestión de la comunicación, de sus datos personales, imagen e intimidad; que sepa reaccionar (qué no hacer) y a quién acudir cuando hay una sospecha de que eso pudiera estar pasando.<br>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="contenedor1">
+            <h2 class="titulo1">Adicción de Redes Sociales</h2>
+            <div class="contenedor-texto1">
+                <img src="Imagenes/FotoAdiccion.jpg" alt="Imagen de Adiccion" class="FotoLink">
+                <div class="contenido-textos">
+                    <h3><span>1</span>De qué se Trata?</h3>
+                    <p>
+                        El uso problemático de las redes sociales, también conocido como adicción a las redes sociales o uso excesivo de las redes sociales o ciberadicción, es una forma de dependencia psicológica o conductual de las plataformas de las redes sociales, similar la ludopatía, el trastorno de adicción a Internet y otras formas de uso excesivo de los medios digitales.
+                    </p>
+                    <h3><span>2</span>Cómo Protegerse?</h3>
+                    <p>
+                        El tratamiento psicológico y socioterapéutico del trastorno de conducta por el abuso de las redes sociales, las nuevas tecnologías o de adicción a los móviles, se debe plantear según el contexto de la persona afectada. Teniendo en cuenta circunstancias tan distintas como la pluralidad del ser humano, además del entorno, su personalidad, los problemas que tenga y su forma de afrontarlos.<br>
+                        En función de la evolución de la persona y como afecte a su salud, pueden considerarse útiles los fármacos encaminados a disminuir estos episodios de intensidad y/o de impulsividad, los cambios de ánimo, etc.<br>
+                        El tratamiento de adicción a las redes sociales tiende a requerir de una intervención desde la vertiente psicológica, pero en ocasiones y según lo requiera el estado del paciente, es absolutamente necesario complementarlo con la psicofarmacológica.<br>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <div class="Tema2-Tips" id="enlaceTips"> <!--Coigo copiado del internet-->
+        <div>
+            <h1>Noticias Nacionales</h1>
+        </div>
+        <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C150.00,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
+    </div>
+    <section class="contenedor1">
+        <h2 class="tituloYasuni">Ecuador: las especies del Yasuní están en peligro por la explotación petrolera</h2>
+        <div class="contenedor-texto1" id="yasuni">
+            <img src="Imagenes/FotoYasuni.jpg" alt="Yasuni" class="FotoLink">
+            <div class="contenido-textos">
+            <div class="contenido-textos-yasuni">
+                <h3><span>1</span>De qué se Trata?</h3>
+                <p class="PrimerParrafoYasuni">
+                    El Parque Nacional Yasuní es una reserva del Ecuador con un área de aproximadamente 10.000 kilómetros 
+                    cuadrados. Está ubicado en las provincias orientales de Pastaza y Orellana, a unos 250 kilómetros al 
+                    sudeste de Quito en la cuenca del Amazonas. El parque fue reconocido como reserva de la biosfera por 
+                    la UNESCO en 1989. De acuerdo a estudios científicos, según recoge la WCS, el Parque Nacional Yasuní 
+                    es considerado uno de los lugares más biodiversos del mundo, porque en él conviven una gran cantidad 
+                    y variedad de organismos vivos.
+                    <br>
+                    La región amazónica ecuatoriana es rica en recursos petroleros y ha sido la columna vertebral de las 
+                    finanzas públicas del Ecuador desde la década de 1970. Para evitar la explotación indiscriminada de 
+                    los recursos naturales, el gobierno de Jamil Mahuad declaró la zona sur de Yasuní como Zona Intangible 
+                    en 1998, para proteger a las personas en aislamiento voluntario y a las reservas de biosfera del impacto 
+                    ambiental provocado por los campos petrolíferos.
+                    <br>
+                    Los Yasunidos se refieren al Decreto Ejecutivo 95 que pretende duplicar la explotación petrolera en el país. 
+                    El colectivo considera que la política del gobierno de Lasso profundizará “el extractivismo, garantizando 
+                    exorbitantes réditos e impunidad a las empresas petroleras”. Además, aseguran que “esta política va dirigida 
+                    contra los pueblos y nacionalidades indígenas que se verán afectadas por la ampliación de la frontera petrolera 
+                    en el sur oriente de la Amazonía y en el Yasuní”.
+                    <br>
+                    El sector hidrocarburífero ecuatoriano cuenta con un nuevo reglamento acorde a la política de Lasso 
+                    firmada en el decreto ejecutivo 95, el ministro de Energía y Recursos Naturales No Renovables, Juan 
+                    Carlos Bermeo Calderón, ha informado que “con esta normativa se actualizan procedimientos, cuya 
+                    aplicación contribuye al incremento de la producción petrolera, además se reducen los tiempos y 
+                    se simplifican procesos para trámites administrativos”.
+                    <br>
+                    Ecuador forma parte de la red de biosferas con 7 sitios reconocidos por la UNESCO: el Archipiélago de 
+                    Galápagos reconocido en 1984, el Parque Yasuní en 1989, el Parque Sumaco en 2000, el Parque Podocarpus-El 
+                    Cóndor en 2007, el Parque Cajas en 2013, la Reserva Transfronteriza Bosques de Paz en 2017, y la Reserva del 
+                    Chocó Andino en 2018.
+                </p>
+                <h3><span>2</span>Tensión en el Yasuní pone en riesgo a  pueblos en aislamiento</h3>
+                <p class="SegundoParrafoYasuni">
+                    Pichilingue relata una larga historia de conflictos y muertes entre indígenas de la etnia waorani, 
+                    colonos y pueblos aislados, que ponen en peligro la supervivencia de estos últimos, y que antropólogos 
+                    y entendidos en el tema asocian con la presión que ejerce la expansión de la frontera extractiva. 
+                    En esa línea sostiene que es indispensable analizar las medidas de mitigación que ahora implementa 
+                    el Ministerio de Justicia, las mismas que a su entender resultan escasas y poco efectivas. Además, 
+                    explica que, aunque hay indicios de presencia de aislados en el ITT, existen otras zonas del Yasuní 
+                    donde se realiza actividad petrolera pese a que se ha documentado la presencia de pueblos en aislamiento.
+                    <br>
+                    Finalmente se refiere al asesinato del waorani Caiga Baihua a manos de indígenas en aislamiento. 
+                    Esto ocurrió en enero pasado en la cuenca del río Shiripuno y a varios kilómetros de otro bloque petrolero, 
+                    el 55 (Armadillo), que opera una empresa bielorrusa.  Un mes después del suceso, el Ministerio de Justicia 
+                    suscribió un acuerdo de paz con la familia de la víctima a fin de que esta se abstenga de llevar a cabo actos 
+                    violentos como los ocurridos en 2013, cuando un grupo waorani se sumergió en el espesor de la selva para vengar 
+                    la muerte de los ancianos Ompore y Buganey y mataron entre 18 y 30 indígenas aislados, aunque el número exacto 
+                    nunca se confirmó. Pichilingue relata que les ofrecieron una compensación consistente en una vivienda y unas 
+                    cabañas ecoturísticas para su comunidad. Siete meses después, el ofrecimiento no se concreta. Mongabay Latam 
+                    intentó por varios medios comunicarse con el Ministerio de Justicia, pero no obtuvo respuesta.
+                    <br>
+                    Milagros Aguirre, quien hasta hace poco dirigió la Fundación Alejandro Labaka, que trabaja por 
+                    el bienestar de las comunidades indígenas y tiene sede en la localidad más cercana al Yasuní, 
+                    Coca, también hace énfasis en la situación de tensión que se vive al interior del parque. 
+                    “[Los Tagaeri-Taromenane] tienen miedo de los helicópteros, de las escopetas, de las máquinas 
+                    que abren caminos… y los otros (waoranis y campesinos) tienen miedo de las lanzas. Y el miedo es mal consejero”.
+                    <a href="Yasuní: Empieza la explotación petrolera en polémico bloque ubicado en la Amazonía ecuatoriana (mongabay.com)">Referencia</a>
+                </p>
+            </div>
+                
+            </div>
+        </div>
+    </section>
+    <section class="contenedor1">
+        <h2 class="titulo1-CocaCodo">Coca Codo Sinclair, la mega represa que China construyó en Ecuador, sigue generando pérdidas millonarias</h2>
+        <div class="contenedor-texto1" id="CocaCodo">
+            <img src="Imagenes/CocaCodo.jpg" alt="Imagen de verificación dos pasos" class="FotoLink">
+            <div class="contenido-textos">
+                <div>
+                    <h3><span>1</span>De qué se Trata?</h3>
+                <p class="PrimerTextoCocaCodo">
+                    Coca Codo Sinclair, la enorme represa y central hidroeléctrica construida 
+                    por China en Ecuador, sigue generando pérdidas económicas y amenaza el 
+                    suministro eléctrico del país andino.
+                    <br>
+                    En las intenciones del gobierno del expresidente Rafael Correa (2007–2017), 
+                    que impulsó la obra construida por la empresa china Sinohydro, la planta debía 
+                    producir más de 1.500 megavatios de energía “limpia y renovable” y cubrir un 
+                    tercio de la demanda eléctrica de Ecuador con un tiempo de vida útil de 50 años.
+                    <br>
+                    En las actuales tareas de mantenimiento se hallaron más de 3.500 nuevas fisuras 
+                    en los cuatro distribuidores, superando las 11.000 fallas en total.
+                    <br>
+                    Los defectos de construcción no son el único problema. La central hidroeléctrica, 
+                    que según múltiples investigaciones y expertos se realizó en contra de todos los 
+                    estudios y advertencias sobre las condiciones geológicas de la zona, también está 
+                    amenazada por la fuerte erosión del río Coca desde que se derrumbó la cascada San 
+                    Rafael de 130 metros en la región amazónica en febrero del 2020.
+                    <br>
+                    Por el momento se esperan los resultados de una auditoria independiente realizada 
+                    por una firma alemana y Beijing afirmó que asumirán las responsabilidades necesarias 
+                    en caso de existir.
+                    <br>
+                    Según dijo a El Comercio Carlos Baldeón, presidente del Colegio de Ingenieros 
+                    Mecánicos de Pichincha, la presa necesita la sustitución de todos los distribuidores, 
+                    por un valor cercano a los USD 200 millones.
+                    <br>
+                    La principal preocupación los expertos es que al realizar tantas reparaciones, 
+                    el material puede haber perdido ya sus propiedades originales.
+                </p>
+                <h3><span>2</span>El problema oculto con China</h3>
+                <p class="SegundoTextoCocaCodo">
+                    Al igual que en otros países emergentes o en vías de desarrollo del mundo, 
+                    Beijing fue ingresando poco a poco a la economía de Ecuador como prestamista, 
+                    como inversionista y como constructor de obras públicas, una estrategia en que 
+                    la corrupción juega un papel no menor (todos los funcionarios involucrados en el 
+                    proyecto de la represa terminaron presos por sobornos).
+                    <br>
+                    La consecuencia de esta estrategia es que gran parte de la deuda externa de Ecuador 
+                    fue contraída con bancos de China para realizar mega proyectos como los de Codo Sinclair.
+                    <br>
+                    Una realidad que reduce los márgenes de maniobra del país andino frente al voraz gigante asiático.
+                    <br>
+                    Ecuador mantiene una deuda de alrededor de USD 4.600 millones con los bancos chinos. De este valor, 
+                    USD 400 millones son “deuda concesional” a muy bajo interés y muy largo plazo. Hasta mayo de 2020, 
+                    la deuda con China equivalía al 79% de las obligaciones de Ecuador con otros países.
+                    <br>
+                    El gran problema de la deuda de Ecuador y China es que los barriles de petróleo que se dieron como 
+                    forma de pago no fueron avaluados con el precio internacional del crudo sino que se congeló el precio 
+                    del barril, esto habría provocado cuantiosos perjuicios al Ecuador, pues por cada barril, el país 
+                    perdió alrededor de USD 3.60. Hasta el momento, el país andino ha entregado 1.174 millones de barriles 
+                    como forma de pago.
+                    <a href="“Petrochina”: investigan una enorme trama de corrupción entre Ecuador y China durante el gobierno de Rafael Correa - Infobae">Referencia</a>
+                </p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section class="contenedor1">
+        <h2 class="titulo1">Aumentar la seguridad de tus contraseñas</h2>
+        <div class="contenedor-texto1">
+            <img src="Imagenes/FotoClaveSegura.jpg" alt="Imagen de Seguridad contraseña" class="FotoLink">
+            <div class="contenido-textos">
+                <h3><span>1</span>De qué se Trata?</h3>
+                <p>
+                    Al cabo del día accedemos a decenas de plataformas, redes y lugares que requieren del uso de contraseñas. Es de vital importancia que éstas sean fuertes y seguras para evitar el robo de datos personales y cuentas.
+                </p>
+                <h3><span>2</span>Cuál es el Proposito?</h3>
+                <p>
+                    Debemos alejarnos de la utilización de datos de fácil acceso, como la fecha de cumpleaños o números en serie. Es recomendable el uso de mayúsculas intercaladas, números o símbolos. Además, debemos cambiarlas con frecuencia. <br>
+                    Para asegurarse de ello es conveniente gestionarlas desde un solo sitio. Actualmente existen gestores de contraseñas que te ayudan a realizar dicha tarea. <br>
+                    De este modo, con una única clave memorizada, podrás tener acceso a todas tus credenciales, cosa muy útil sobre todo para empresas, las cuales hacen uso de muchos más sitios donde se requiere un registro.<br>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="contenedor1">
+        <h2 class="titulo1">Use redes abiertas solo en casos necesarios</h2>
+        <div class="contenedor-texto1">
+            <img src="Imagenes/RedAbierta.jpg" alt="Imagen de RedAbierta" class="FotoLink">
+            <div class="contenido-textos">
+                <h3><span>1</span>De qué se Trata?</h3>
+                <p>
+                    Una conexión abierta es más propensa a permitir el acceso a los datos del usuario; trate en la medida posible reducir su uso en portales con información sensible y que esta sea necesaria. Conéctese a redes que conozca o que estén protegidas a su vez por contraseñas.
+                </p>
+                <h3><span>2</span>Cuál es el Proposito?</h3>
+                <p>
+                    Persisten muchos riesgos al conectarse a una red WiFi abierta o gratuita. Falta de privacidad, suplantación de identidad, Infección de dispositivos, robo de datos sensibles, son algunos de los peligros que los usuarios corren ante esta práctica.<br>
+                    Conectarse a las redes WiFi públicas y gratuitas que nos rodean es tentador. Nos evitan tener que usar los datos móviles de nuestro contrato, pero los riesgos que asumimos al conectarnos a ellas son enormes. <br>
+                    Las VPNs, el mejor mecanismo de defensa al conectarte a una WiFi pública, es por tanto recomendable hacer uso de una VPN de pago que además garantice ciertas opciones: por ejemplo, que no haya registro de actividad de uso y tampoco registro de las conexiones o que se use un cifrado fuerte en las conexiones.<br>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="contenedor1">
+        <h2 class="titulo1">Descargas Seguras</h2>
+        <div class="contenedor-texto1">
+            <img src="Imagenes/FotoDownload.jpg" alt="Imagen de DescargaSegura" class="FotoLink">
+            <div class="contenido-textos">
+                <h3><span>1</span>De qué se Trata?</h3>
+                <p>
+                    Descargar cualquier clase de archivo de Internet es un proceso mecánico y rutinario que en ocasiones esconde más riesgos de los que podemos apreciar a primera vista. Muchos programas o aplicaciones son un nido de malware que pueden infectar nuestro sistema informático o dispositivo móvil y causarnos muchos quebraderos de cabeza en el futuro. Vamos a repasar algunas directrices clave para evitar descargar virus y aplicaciones maliciosas siguiendo unas pautas de seguridad.
+                </p>
+                <h3><span>2</span>Cuál es el Proposito?</h3>
+                <p>
+                    Si vamos a bajar algún programa, complemento o en definitiva algún archivo para actualizar o completar nuestro equipo, siempre es recomendable hacerlo directamente desde la página web del fabricante de un dispositivo en cuestión (en el caso de hardware para el ordenador por ejemplo) o el autor de un determinado software ya que nos ayudará a encontrarnos con sorpresas no deseadas.<br>
+                    El malware puede esconderse tras cualquier descarga pero por norma general, las tiendas oficiales de aplicaciones como Windows Store, la App Store de Apple o Google Play realizarán un control más exhaustivo que tiendas de aplicaciones de terceros donde los controles de calidad no son tan rigurosos y existe una mayor libertad de publicar. <br>
+                    <br>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container_footer" id="enlaceReferencias">
+            <div class="box_footer">
+                <div class="logo">
+                    <img src="Imagenes/logoFooter2.png" alt="Sistemas de información">
+                </div>
+                <div class="terms">
+                    <p>
+                        El Día Internacional de Internet Seguro (Safe Internet Day), es un evento de gran envergadura, que fue propuesto por la red INSAFE y apoyado por la Unión Europea. Se celebra el segundo día de la segunda semana del segundo mes del año, o lo que es lo mismo, el segundo martes de febrero.
+                    </p>
+                </div>
+            </div>
+            <div class="box_footer">
+                <h2>Referencias</h2>
+                <a href="https://www.is4k.es/programas/dia-de-internet-segura">Internet Segura</a>
+                <a href="https://www.diainternacionalde.com/ficha/dia-internacional-internet-seguro">Dia Internacional</a>
+                <a href="https://www.thinkwithgoogle.com/intl/es-es/estrategias-de-marketing/aplicaciones-y-moviles/el-dia-internacional-de-internet-segura-5-consejos-de-google-que-te-permitiran-estar-mas-seguro-online/">Google Security</a>
+                <a href="https://www.unicef.es/educa/dias-mundiales/dia-internet-segura">Unicef</a>
+            </div>
+            <div class="box_footer">
+                <h2>Videos</h2>
+                <a href="https://www.youtube.com/watch?v=yW4EmNXVt-g">Fundacion Vodafone</a>
+                <a href="https://www.youtube.com/watch?v=ytxYtEhnP0E">Ciberseguridad</a>
+                <a href="https://www.youtube.com/watch?v=t-x73w1N1os">Recomendaciones</a>
+                <a href="https://www.youtube.com/watch?v=BkCSFxZwLmg">Internet Segura 2018</a>
+            </div>
+            <div class="box_footer">
+                <h2>Redes Sociales</h2>
+                <a href="https://www.facebook.com/incibe"><i class="fa-brands fa-facebook-square"></i> Facebook</a>
+                <a href="https://t.me/INCIBE"><i class="fa-brands fa-telegram"></i> Telegram</a>
+                <a href="https://www.instagram.com/incibe/"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                <a href="https://vk.com/?lang=en"><i class="fa-brands fa-vk"></i> VK</a>
+            </div>
+        </div>
+        <div class="box_copyright">
+            <hr>
+            <p>
+                Todos los derechos reservados (c) <b>2022 SISTEMAS DE INFORMACION</b>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

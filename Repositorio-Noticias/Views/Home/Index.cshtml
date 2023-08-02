@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="text">
+
+    <form method="post" asp-controller="Uusario" asp-action="Noticia1">
+        <label for="username">Nombre de usuario:</label>
+        <input type="text" id="username" name="username" />
+
+        <input type="submit" value="Iniciar sesión" />
+    </form>
+
+    <nav>
+        <ul>
+            <li><a href="/Usuarios/Crear">Crear usuario</a></li>
+            <li><a href="/Usuarios/Actualizar">Actualizar usuario</a></li>
+            <li><a href="/Usuarios/Eliminar">Eliminar usuario</a></li>
+        </ul>
+    </nav>
+</div>
